@@ -1,0 +1,300 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/fagnersilva/ontologies/2024/10/ComputingAffective.owl#"
+     xml:base="http://www.semanticweb.org/fagnersilva/ontologies/2024/10/ComputingAffective.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/fagnersilva/ontologies/2024/10/ComputingAffective.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.com#hasEmotion -->
+
+    <owl:ObjectProperty rdf:about="http://example.com#hasEmotion">
+        <owl:equivalentProperty rdf:resource="http://example.com#isEmotionOf"/>
+        <owl:inverseOf rdf:resource="http://example.com#hasEmotion"/>
+        <owl:inverseOf rdf:resource="http://example.com#isEmotionOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com#isEmotionOf -->
+
+    <owl:ObjectProperty rdf:about="http://example.com#isEmotionOf">
+        <owl:inverseOf rdf:resource="http://example.com#isEmotionOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.com#Activity -->
+
+    <owl:Class rdf:about="http://example.com#Activity">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#AffectiveComputing -->
+
+    <owl:Class rdf:about="http://example.com#AffectiveComputing">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Anger -->
+
+    <owl:Class rdf:about="http://example.com#Anger">
+        <rdfs:subClassOf rdf:resource="http://example.com#NegativeEmotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#DigitalLearningObject -->
+
+    <owl:Class rdf:about="http://example.com#DigitalLearningObject">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Emotion -->
+
+    <owl:Class rdf:about="http://example.com#Emotion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#IntrinsicMode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Frustration -->
+
+    <owl:Class rdf:about="http://example.com#Frustration">
+        <rdfs:subClassOf rdf:resource="http://example.com#NegativeEmotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Happiness -->
+
+    <owl:Class rdf:about="http://example.com#Happiness">
+        <rdfs:subClassOf rdf:resource="http://example.com#PositiveEmotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Joy -->
+
+    <owl:Class rdf:about="http://example.com#Joy">
+        <rdfs:subClassOf rdf:resource="http://example.com#PositiveEmotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#NegativeEmotion -->
+
+    <owl:Class rdf:about="http://example.com#NegativeEmotion">
+        <rdfs:subClassOf rdf:resource="http://example.com#Emotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#PositiveEmotion -->
+
+    <owl:Class rdf:about="http://example.com#PositiveEmotion">
+        <rdfs:subClassOf rdf:resource="http://example.com#Emotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Sofware -->
+
+    <owl:Class rdf:about="http://example.com#Sofware">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Student -->
+
+    <owl:Class rdf:about="http://example.com#Student">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Teacher -->
+
+    <owl:Class rdf:about="http://example.com#Teacher">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#FunctionalComplex -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#IntrinsicMode -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#IntrinsicMode"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Kind -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Kind"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Phase -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Phase"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.com#Activity -->
+
+    <owl:NamedIndividual rdf:about="http://example.com#Activity">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com#AffectiveComputing -->
+
+    <owl:NamedIndividual rdf:about="http://example.com#AffectiveComputing">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com#Anger -->
+
+    <owl:NamedIndividual rdf:about="http://example.com#Anger">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Phase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com#DigitalLearningObject -->
+
+    <owl:NamedIndividual rdf:about="http://example.com#DigitalLearningObject">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com#Emotion -->
+
+    <owl:NamedIndividual rdf:about="http://example.com#Emotion">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com#Frustration -->
+
+    <owl:NamedIndividual rdf:about="http://example.com#Frustration">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Phase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com#Happiness -->
+
+    <owl:NamedIndividual rdf:about="http://example.com#Happiness">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Phase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com#Joy -->
+
+    <owl:NamedIndividual rdf:about="http://example.com#Joy">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Phase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com#NegativeEmotion -->
+
+    <owl:NamedIndividual rdf:about="http://example.com#NegativeEmotion">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Phase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com#PositiveEmotion -->
+
+    <owl:NamedIndividual rdf:about="http://example.com#PositiveEmotion">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Phase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com#Sofware -->
+
+    <owl:NamedIndividual rdf:about="http://example.com#Sofware">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com#Student -->
+
+    <owl:NamedIndividual rdf:about="http://example.com#Student">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com#Teacher -->
+
+    <owl:NamedIndividual rdf:about="http://example.com#Teacher">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
