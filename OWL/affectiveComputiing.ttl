@@ -1,0 +1,92 @@
+@prefix : <http://example.com#>.
+@prefix gufo: <http://purl.org/nemo/gufo#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<http://example.com> rdf:type owl:Ontology;
+    owl:imports gufo:.
+:Teacher rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Teacher"@en.
+:Student rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Student"@en.
+:Emotion rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:IntrinsicMode;
+    rdfs:label "Emotion"@en.
+:DigitalLearningObject rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "DigitalLearningObject"@en.
+:AffectiveComputing rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "AffectiveComputing"@en.
+:Activity rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Activity"@en.
+:Sofware rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Sofware"@en.
+:NegativeEmotion rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+    rdfs:label "NegativeEmotion"@en.
+:PositiveEmotion rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+    rdfs:label "PositiveEmotion"@en.
+:Joy rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+    rdfs:label "Joy"@en.
+:Anger rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+    rdfs:label "Anger"@en.
+:Frustration rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+    rdfs:label "Frustration"@en.
+:Happiness rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+    rdfs:label "Happiness"@en.
+:NegativeEmotion rdfs:subClassOf :Emotion.
+:PositiveEmotion rdfs:subClassOf :Emotion.
+:Happiness rdfs:subClassOf :PositiveEmotion.
+:Joy rdfs:subClassOf :PositiveEmotion.
+:Anger rdfs:subClassOf :NegativeEmotion.
+:Frustration rdfs:subClassOf :NegativeEmotion.
+:supports rdf:type owl:ObjectProperty;
+    rdfs:domain :AffectiveComputing;
+    rdfs:range :Teacher;
+    rdfs:label "supports"@en.
+:usesForTeaching rdf:type owl:ObjectProperty;
+    rdfs:domain :Teacher;
+    rdfs:range :DigitalLearningObject;
+    rdfs:label "usesForTeaching"@en.
+:analyzes rdf:type owl:ObjectProperty;
+    rdfs:domain :DigitalLearningObject;
+    rdfs:range :Student;
+    rdfs:label "analyzes"@en.
+:hasEmotion rdf:type owl:ObjectProperty;
+    rdfs:domain :Student;
+    rdfs:range :Emotion;
+    rdfs:label "hasEmotion"@en.
+:adaptsBasedOnEmotion rdf:type owl:ObjectProperty;
+    rdfs:domain :DigitalLearningObject;
+    rdfs:range :Emotion;
+    rdfs:label "adaptsBasedOnEmotion"@en.
+:enhancesEngagement rdf:type owl:ObjectProperty;
+    rdfs:domain :AffectiveComputing;
+    rdfs:range :Student;
+    rdfs:label "enhancesEngagement"@en.
+:creates rdf:type owl:ObjectProperty;
+    rdfs:domain :Teacher;
+    rdfs:range :Activity;
+    rdfs:label "creates"@en.
+:usesForTeaching_1 rdf:type owl:ObjectProperty;
+    rdfs:domain :Teacher;
+    rdfs:range :Sofware;
+    rdfs:label "usesForTeaching"@en.
+:capturesEmotion rdf:type owl:ObjectProperty;
+    rdfs:domain :Sofware;
+    rdfs:range :Emotion;
+    rdfs:label "capturesEmotion"@en.
+:suggestActivitiesBasedOnEmotion rdf:type owl:ObjectProperty;
+    rdfs:domain :Sofware;
+    rdfs:range :Student;
+    rdfs:label "suggestActivitiesBasedOnEmotion"@en.
+:adaptsActivitiesBasedOnEmotion rdf:type owl:ObjectProperty;
+    rdfs:domain :Sofware;
+    rdfs:range :Activity;
+    rdfs:label "adaptsActivitiesBasedOnEmotion"@en.
