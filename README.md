@@ -43,17 +43,14 @@ For an interactive and online visualization, use the `computingAffective` file w
 Here are three representative images of the **Affective Learning Ontology**:
 
 1. **View 1: Algorithm Types**  
-   This diagram shows the types of algorithms used for analysis of text, audio, video, and behavior in the context of affective computing.  
+   Shows the types of algorithms used for analysis of text, audio, video, and behavior in the context of affective computing.  
    ![Algorithm Types](https://github.com/user-attachments/assets/3cca54e6-5ad7-4f96-a93d-9bd321cc4685)  
-   *Click the image to view in full size.*
 
 2. **View 2: Emotions of the Student**  
-   This diagram illustrates how emotions like **EmotionPositive**, **EmotionNegative**, and **EmotionNeutral** are associated with the student's profile in the ontology.  
+   Illustrates how emotions like **EmotionPositive**, **EmotionNegative**, and **EmotionNeutral** are associated with the student's profile in the ontology.  
    ![Emotions of the Student](https://github.com/user-attachments/assets/a7737dfd-c7f1-44c1-ad59-b52ad9d9f99e)  
-   *Click the image to view in full size.*
 
 3. **View 3: Usage for Teaching**  
-   This diagram shows how the **Digital Learning Object** captures emotions from the student and adapts activities accordingly.  
+   Shows how the **Digital Learning Object** captures emotions from the student and adapts activities accordingly.  
    ![Usage for Teaching](https://github.com/user-attachments/assets/8c84a36b-16e2-43be-b926-2b3bf1b3893d)  
-   *Click the image to view in full size.*
 
