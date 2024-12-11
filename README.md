@@ -1,43 +1,59 @@
 # Affective Learning Ontology
 
-## Descrição
+## Description
 
-A **Affective Learning Ontology** é uma ontologia desenvolvida para modelar a interação entre estados emocionais e objetos de aprendizagem digitais, com foco no campo da computação afetiva em ambientes educacionais. Este projeto busca aprimorar a personalização e a eficácia do processo de ensino-aprendizagem, considerando as emoções dos estudantes para criar uma experiência de aprendizado mais adaptativa e envolvente.
+The **Affective Learning Ontology** is an ontology developed to model the interaction between emotional states and digital learning objects, focusing on the field of affective computing in educational environments. This project aims to enhance the personalization and effectiveness of the learning process, considering students' emotions to create a more adaptive and engaging learning experience.
 
-## Estrutura do Repositório
+## Repository Structure
 
-- **`ORSD.md`**: Documento de Especificação de Requisitos da Ontologia (ORSD), contendo os objetivos, classes, propriedades e escopo da ontologia.
-- **`OntoUML/`**: Pasta contendo o arquivo `affectiveComputing.vpp`, que pode ser aberto no software Visual Paradigm para visualizar o modelo da ontologia em OntoUML.
-- **`OWL/`**: Diretório com os arquivos OWL, incluindo:
-  - **`AffectiveComputing.owx`**: Arquivo que pode ser carregado no Protégé para explorar e editar a ontologia.
-  - **`computingAffective.owl`**: Arquivo compatível com o [WebVOWL](https://service.tib.eu/webvowl/), uma ferramenta de visualização online para ontologias OWL.
+- **`ORSD.md`**: Requirements Specification Document for the Ontology (ORSD), containing the goals, classes, properties, and scope of the ontology.
+- **`OntoUML/`**: Folder containing the `affectiveComputing.vpp` file, which can be opened in the Visual Paradigm software to view the OntoUML model of the ontology.
+- **`OWL/`**: Directory with OWL files, including:
+  - **`AffectiveComputing.owx`**: File that can be loaded in **Protégé** to explore and edit the ontology.
+  - **`computingAffective.owl`**: File compatible with [WebVOWL](https://service.tib.eu/webvowl/), an online ontology visualization tool.
 
-## Instruções para Uso
+## Usage Instructions
 
-### 1. Visualizar a Ontologia em OntoUML
+### 1. View the Ontology in OntoUML
 
-Para explorar o modelo da ontologia em OntoUML, use o arquivo `affectiveComputing.vpp`:
+To explore the model of the ontology in OntoUML, use the `affectiveComputing.vpp` file:
 
-- Abra o software **Visual Paradigm**.
-- No menu, selecione "Open" e escolha o arquivo `affectiveComputing.vpp` na pasta `OntoUML`.
-- Este arquivo contém o diagrama da ontologia em OntoUML, permitindo uma visualização detalhada dos conceitos e relações de forma visual.
+- Open the **Visual Paradigm** software.
+- From the menu, select "Open" and choose the `affectiveComputing.vpp` file from the `OntoUML` folder.
+- This file contains the OntoUML diagram of the ontology, allowing a detailed visualization of concepts and relationships in a visual format.
 
-### 2. Visualizar e Editar a Ontologia em OWL
+### 2. View and Edit the Ontology in OWL
 
-Para explorar e editar a ontologia em OWL, use o arquivo `AffectiveComputing.owx`:
+To explore and edit the ontology in OWL, use the `AffectiveComputing.owx` file:
 
-- Abra o software **Protégé** (disponível em [https://protege.stanford.edu/](https://protege.stanford.edu/)).
-- No menu, selecione "Open" e carregue o arquivo `AffectiveComputing.owx` na pasta `OWL`.
-- O Protégé permite examinar as classes, propriedades e instâncias da ontologia, facilitando a edição e o teste de novas relações e conceitos.
+- Open **Protégé** software (available at [https://protege.stanford.edu/](https://protege.stanford.edu/)).
+- From the menu, select "Open" and load the `AffectiveComputing.owx` file from the `OWL` folder.
+- Protégé allows you to examine the classes, properties, and instances of the ontology, making it easier to edit and test new relations and concepts.
 
-### 3. Visualizar a Ontologia com WebVOWL
+### 3. View the Ontology with WebVOWL
 
-Para uma visualização online e interativa, use o arquivo `computingAffective` com a ferramenta WebVOWL:
+For an interactive and online visualization, use the `computingAffective` file with the WebVOWL tool:
 
-- Acesse [WebVOWL](https://service.tib.eu/webvowl/).
-- Faça o upload do arquivo `computingAffective.owl` encontrado na pasta `OWL`.
-- WebVOWL oferece uma visualização intuitiva e interativa da ontologia, permitindo explorar as relações entre conceitos de forma visual.
-- ![usesForTeaching](https://github.com/user-attachments/assets/8c84a36b-16e2-43be-b926-2b3bf1b3893d)
-![emotionsStudent](https://github.com/user-attachments/assets/a7737dfd-c7f1-44c1-ad59-b52ad9d9f99e)
-![algorithmTypes](https://github.com/user-attachments/assets/3cca54e6-5ad7-4f96-a93d-9bd321cc4685)
+- Go to [WebVOWL](https://service.tib.eu/webvowl/).
+- Upload the `computingAffective.owl` file from the `OWL` folder.
+- WebVOWL provides an intuitive and interactive visualization of the ontology, allowing you to explore the relationships between concepts in a visual manner.
+
+## **Images of the Three Views in Paradigming**
+
+Here are three representative images of the **Affective Learning Ontology**:
+
+1. **View 1: Algorithm Types**  
+   This diagram shows the types of algorithms used for analysis of text, audio, video, and behavior in the context of affective computing.  
+   ![Algorithm Types](https://github.com/user-attachments/assets/3cca54e6-5ad7-4f96-a93d-9bd321cc4685)  
+   *Click the image to view in full size.*
+
+2. **View 2: Emotions of the Student**  
+   This diagram illustrates how emotions like **EmotionPositive**, **EmotionNegative**, and **EmotionNeutral** are associated with the student's profile in the ontology.  
+   ![Emotions of the Student](https://github.com/user-attachments/assets/a7737dfd-c7f1-44c1-ad59-b52ad9d9f99e)  
+   *Click the image to view in full size.*
+
+3. **View 3: Usage for Teaching**  
+   This diagram shows how the **Digital Learning Object** captures emotions from the student and adapts activities accordingly.  
+   ![Usage for Teaching](https://github.com/user-attachments/assets/8c84a36b-16e2-43be-b926-2b3bf1b3893d)  
+   *Click the image to view in full size.*
 
