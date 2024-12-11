@@ -1,55 +1,54 @@
-# Documento de Especificação de Requisitos da Ontologia (ORS-D)
+# Ontology Requirements Specification Document (ORS-D)
 
-## 1. Introdução
+## 1. Introduction
 
-### 1.1 Objetivo
-Este documento descreve os requisitos necessários para o desenvolvimento de uma ontologia voltada para a computação afetiva no ensino, com o objetivo de modelar interações entre estudantes, professores, objetos digitais de aprendizagem e as emoções dos alunos. A ontologia visa adaptar atividades de aprendizagem com base no estado emocional dos alunos, monitorar suas emoções durante o processo educacional e fornecer feedback emocional.
+### 1.1 Objective
+This document describes the necessary requirements for the development of an ontology focused on affective computing in education, aiming to model interactions between students, teachers, digital learning objects, and students' emotions. The ontology aims to adapt learning activities based on students' emotional states, monitor their emotions during the educational process, and provide emotional feedback.
 
-### 1.2 Escopo
-O escopo da ontologia abrange:
-- A modelagem de conceitos e relações no contexto de educação e computação afetiva.
-- A adaptação das atividades de aprendizado de acordo com as emoções capturadas dos alunos.
-- O fornecimento de feedback emocional aos alunos com base nas interações com o sistema.
+### 1.2 Scope
+The scope of the ontology includes:
+- The modeling of concepts and relationships in the context of education and affective computing.
+- The adaptation of learning activities based on the emotions captured from students.
+- Providing emotional feedback to students based on their interactions with the system.
 
-## 2. Requisitos Funcionais
+## 2. Functional Requirements
 
-Os requisitos funcionais da ontologia são formulados como questões de competência. Essas questões devem ser respondidas pelo processo de modelagem da ontologia. Abaixo estão as principais questões de competência que a ontologia precisa responder:
+The functional requirements of the ontology are formulated as competency questions. These questions must be answered by the ontology modeling process. Below are the main competency questions the ontology needs to answer:
 
-### 2.1 Questões de Competência
+### 2.1 Competency Questions
 
-#### 2.1.1 Qual é o papel de um Professor no processo de ensino usando Objetos Digitais de Aprendizado?
-A ontologia deve modelar o conceito de **Teacher (Professor)** e como ele utiliza o **DigitalLearningObject (Objeto Digital de Aprendizado)** para ensinar e interagir com os alunos. A questão é respondida por uma associação entre **Teacher** e **DigitalLearningObject**.
+#### 2.1.1 What is the role of a Teacher in the teaching process using Digital Learning Objects?
+The ontology must model the concept of **Teacher** and how they use the **DigitalLearningObject** to teach and interact with students. This question is answered by an association between **Teacher** and **DigitalLearningObject**.
 
-#### 2.1.2 Como a emoção de um aluno afeta sua interação com as atividades de aprendizado?
-A ontologia precisa descrever como as emoções dos estudantes (**Emotion**) influenciam a adaptação das atividades educacionais (**Activity**) através do **DigitalLearningObject**. A questão é respondida pela modelagem da associação **adaptActivitiesBasedOnEmotion**, que liga **Emotion** a **Activity**.
+#### 2.1.2 How does a student's emotion affect their interaction with learning activities?
+The ontology needs to describe how students' emotions (**Emotion**) influence the adaptation of educational activities (**Activity**) through the **DigitalLearningObject**. This question is answered by modeling the association **adaptActivitiesBasedOnEmotion**, which links **Emotion** to **Activity**.
 
-#### 2.1.3 Como as emoções dos alunos são capturadas e associadas ao aprendizado?
-A ontologia deve incluir mecanismos para modelar a captura das emoções dos alunos, representadas pela associação **capturesEmotionFrom**, que relaciona **DigitalLearningObject** com **Student** e **Emotion**.
+#### 2.1.3 How are students' emotions captured and associated with learning?
+The ontology must include mechanisms for modeling the capture of students' emotions, represented by the association **capturesEmotionFrom**, which relates **DigitalLearningObject** to **Student** and **Emotion**.
 
-#### 2.1.4 Qual é a relação entre os estudantes e o feedback emocional durante o processo de aprendizado?
-A ontologia deve modelar o relacionamento entre o **EmotionDetectionSystem** e o **SoftwareWeb**, sendo este o processo de fornecimento de feedback emocional através da associação **providesEmotionFeedbackTo**.
+#### 2.1.4 What is the relationship between students and emotional feedback during the learning process?
+The ontology must model the relationship between the **EmotionDetectionSystem** and the **SoftwareWeb**, which is the process of providing emotional feedback through the association **providesEmotionFeedbackTo**.
 
-### 2.2 Respostas Esperadas no Processo de Modelagem
-A modelagem deve responder a essas questões, utilizando a definição de entidades, relacionamentos, papéis e estereótipos como elementos centrais para representar:
-- A adaptação dinâmica do conteúdo educacional com base nas emoções dos alunos.
-- A interação entre estudantes e professores através de objetos digitais de aprendizado.
-- O monitoramento contínuo das emoções dos estudantes durante o processo de ensino e a retroalimentação emocional gerada.
+### 2.2 Expected Responses in the Modeling Process
+The modeling process should answer these questions using the definition of entities, relationships, roles, and stereotypes as core elements to represent:
+- The dynamic adaptation of educational content based on students' emotions.
+- The interaction between students and teachers through digital learning objects.
+- The continuous monitoring of students' emotions during the teaching process and the emotional feedback generated.
 
-## 3. Requisitos Não Funcionais
+## 3. Non-Functional Requirements
 
-Os requisitos não funcionais são essenciais para a aplicação, utilização e disseminação da ontologia, e abrangem aspectos técnicos e organizacionais.
+Non-functional requirements are essential for the application, use, and dissemination of the ontology, covering technical and organizational aspects.
 
-### 3.1 Idiomas de Publicação da Ontologia
-A ontologia será publicada usando o **OWL (Web Ontology Language)**, um formato padrão para representação de ontologias na web. A ontologia pode ser complementada com **OWLDoc** para fornecer documentação acessível.
+### 3.1 Ontology Publication Languages
+The ontology will be published using **OWL (Web Ontology Language)**, a standard format for representing ontologies on the web. The ontology may be complemented with **OWLDoc** to provide human-readable documentation.
 
-### 3.2 Disponibilidade de Documentação Adicional
-A documentação adicional estará disponível em plataformas como **GitHub**, permitindo colaboração, controle de versão e contribuições da comunidade.
+### 3.2 Availability of Additional Documentation
+Additional documentation will be available on platforms such as **GitHub**, allowing collaboration, version control, and contributions from the community.
 
-### 3.3 Facilidade de Uso e Adoção
-A ontologia será estruturada de forma a ser intuitiva e de fácil compreensão para desenvolvedores de sistemas educacionais, pesquisadores em computação afetiva e educadores. A ontologia será projetada para fácil integração com outras ontologias educacionais existentes e ferramentas de aprendizado. A plataforma **GitHub** permitirá que a comunidade contribua para a evolução da ontologia, aumentando sua aceitação e aplicação prática.
+### 3.3 Ease of Use and Adoption
+The ontology will be structured in a way that is intuitive and easy to understand for educational system developers, affective computing researchers, and educators. The ontology will be designed for easy integration with other existing educational ontologies and learning tools. The **GitHub** platform will allow the community to contribute to the ontology's evolution, increasing its acceptance and practical application.
 
+## 4. Conclusion
+This Ontology Requirements Specification Document (ORS-D) outlines the functional and non-functional requirements necessary for creating an ontology focused on affective computing in the educational context. The ontology will enable the adaptation of learning activities based on students' emotions, the capture of emotions during the educational process, and the provision of emotional feedback.
 
-## 4. Conclusão
-Este Documento de Especificação de Requisitos da Ontologia (ORS-D) descreve os requisitos funcionais e não funcionais necessários para a criação de uma ontologia voltada para a computação afetiva no contexto educacional. A ontologia permitirá a adaptação das atividades de aprendizado com base nas emoções dos alunos, a captura de emoções durante o processo educacional e o fornecimento de feedback emocional.
-
-A implementação dessa ontologia ajudará a construir sistemas educacionais mais dinâmicos e sensíveis ao estado emocional dos estudantes, promovendo um aprendizado mais personalizado e eficaz.
+The implementation of this ontology will help build more dynamic educational systems that are sensitive to students' emotional states, promoting more personalized and effective learning.
