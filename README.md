@@ -37,3 +37,7 @@ Para uma visualização online e interativa, use o arquivo `computingAffective` 
 - Acesse [WebVOWL](https://service.tib.eu/webvowl/).
 - Faça o upload do arquivo `computingAffective.owl` encontrado na pasta `OWL`.
 - WebVOWL oferece uma visualização intuitiva e interativa da ontologia, permitindo explorar as relações entre conceitos de forma visual.
+- ![usesForTeaching](https://github.com/user-attachments/assets/8c84a36b-16e2-43be-b926-2b3bf1b3893d)
+![emotionsStudent](https://github.com/user-attachments/assets/a7737dfd-c7f1-44c1-ad59-b52ad9d9f99e)
+![algorithmTypes](https://github.com/user-attachments/assets/3cca54e6-5ad7-4f96-a93d-9bd321cc4685)
+
