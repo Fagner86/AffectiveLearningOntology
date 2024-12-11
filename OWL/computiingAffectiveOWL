@@ -1,0 +1,923 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/fagnersilva/ontologies/2024/11/untitled-ontology-47#"
+     xml:base="http://www.semanticweb.org/fagnersilva/ontologies/2024/11/untitled-ontology-47"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/fagnersilva/ontologies/2024/11/untitled-ontology-47"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/nemo/gufo#categorizes -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/nemo/gufo#categorizes"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#isAspectProperPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/nemo/gufo#isAspectProperPartOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#isProperPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#isCollectionMemberOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/nemo/gufo#isCollectionMemberOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#isObjectProperPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#isComponentOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/nemo/gufo#isComponentOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#isObjectProperPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#isEventProperPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/nemo/gufo#isEventProperPartOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#isProperPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#isObjectProperPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/nemo/gufo#isObjectProperPartOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#isProperPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#isProperPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/nemo/gufo#isProperPartOf"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#isSituationProperPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/nemo/gufo#isSituationProperPartOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#isProperPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#isSubCollectionOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/nemo/gufo#isSubCollectionOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#isObjectProperPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#isSubQuantityOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/nemo/gufo#isSubQuantityOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#isObjectProperPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#partitions -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/nemo/gufo#partitions">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#categorizes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#standsIn -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/nemo/gufo#standsIn"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#standsInQualifiedAttribution -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/nemo/gufo#standsInQualifiedAttribution">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#standsIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#standsInQualifiedConstitution -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/nemo/gufo#standsInQualifiedConstitution">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#standsIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#standsInQualifiedInstantiation -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/nemo/gufo#standsInQualifiedInstantiation">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#standsIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#standsInQualifiedParthood -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/nemo/gufo#standsInQualifiedParthood">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#standsIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#standsInQualifiedRelationship -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/nemo/gufo#standsInQualifiedRelationship">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#standsIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.com#Activity -->
+
+    <owl:Class rdf:about="http://example.com#Activity">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#AlgorithmTypes -->
+
+    <owl:Class rdf:about="http://example.com#AlgorithmTypes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Anger -->
+
+    <owl:Class rdf:about="http://example.com#Anger">
+        <rdfs:subClassOf rdf:resource="http://example.com#emotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Audio -->
+
+    <owl:Class rdf:about="http://example.com#Audio">
+        <rdfs:subClassOf rdf:resource="http://example.com#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Audios -->
+
+    <owl:Class rdf:about="http://example.com#Audios">
+        <rdfs:subClassOf rdf:resource="http://example.com#EmotionDetectionSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#BERT -->
+
+    <owl:Class rdf:about="http://example.com#BERT">
+        <rdfs:subClassOf rdf:resource="http://example.com#ForAnalysisTextUses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#CNN -->
+
+    <owl:Class rdf:about="http://example.com#CNN">
+        <rdfs:subClassOf rdf:resource="http://example.com#ForAnalysisAudioUses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Camera -->
+
+    <owl:Class rdf:about="http://example.com#Camera">
+        <rdfs:subClassOf rdf:resource="http://example.com#EmotionDetectionSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#DecisionTree -->
+
+    <owl:Class rdf:about="http://example.com#DecisionTree">
+        <rdfs:subClassOf rdf:resource="http://example.com#ForAnalysisVideoUses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#DigitalLearningObject -->
+
+    <owl:Class rdf:about="http://example.com#DigitalLearningObject">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Disgust -->
+
+    <owl:Class rdf:about="http://example.com#Disgust">
+        <rdfs:subClassOf rdf:resource="http://example.com#emotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Dlib -->
+
+    <owl:Class rdf:about="http://example.com#Dlib">
+        <rdfs:subClassOf rdf:resource="http://example.com#ForAnalysisAudioUses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#EmotionDetectionSystem -->
+
+    <owl:Class rdf:about="http://example.com#EmotionDetectionSystem">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#IntrinsicMode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#EmotionNegative -->
+
+    <owl:Class rdf:about="http://example.com#EmotionNegative">
+        <rdfs:subClassOf rdf:resource="http://example.com#UserProfile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#EmotionNeutral -->
+
+    <owl:Class rdf:about="http://example.com#EmotionNeutral">
+        <rdfs:subClassOf rdf:resource="http://example.com#UserProfile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#EmotionPositive -->
+
+    <owl:Class rdf:about="http://example.com#EmotionPositive">
+        <rdfs:subClassOf rdf:resource="http://example.com#UserProfile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Fear -->
+
+    <owl:Class rdf:about="http://example.com#Fear">
+        <rdfs:subClassOf rdf:resource="http://example.com#emotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#ForAnalysisAudioUses -->
+
+    <owl:Class rdf:about="http://example.com#ForAnalysisAudioUses">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#IntrinsicMode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#ForAnalysisBehaviorUses -->
+
+    <owl:Class rdf:about="http://example.com#ForAnalysisBehaviorUses">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#IntrinsicMode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#ForAnalysisTextUses -->
+
+    <owl:Class rdf:about="http://example.com#ForAnalysisTextUses">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#IntrinsicMode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#ForAnalysisVideoUses -->
+
+    <owl:Class rdf:about="http://example.com#ForAnalysisVideoUses">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#IntrinsicMode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#FormText -->
+
+    <owl:Class rdf:about="http://example.com#FormText">
+        <rdfs:subClassOf rdf:resource="http://example.com#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#ForumDiscussionDebate -->
+
+    <owl:Class rdf:about="http://example.com#ForumDiscussionDebate">
+        <rdfs:subClassOf rdf:resource="http://example.com#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#GPT -->
+
+    <owl:Class rdf:about="http://example.com#GPT">
+        <rdfs:subClassOf rdf:resource="http://example.com#ForAnalysisTextUses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Gemini -->
+
+    <owl:Class rdf:about="http://example.com#Gemini">
+        <rdfs:subClassOf rdf:resource="http://example.com#ForAnalysisTextUses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Happiness -->
+
+    <owl:Class rdf:about="http://example.com#Happiness">
+        <rdfs:subClassOf rdf:resource="http://example.com#emotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#KMeans -->
+
+    <owl:Class rdf:about="http://example.com#KMeans">
+        <rdfs:subClassOf rdf:resource="http://example.com#ForAnalysisVideoUses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#LearningJounal -->
+
+    <owl:Class rdf:about="http://example.com#LearningJounal">
+        <rdfs:subClassOf rdf:resource="http://example.com#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#MFCC -->
+
+    <owl:Class rdf:about="http://example.com#MFCC">
+        <rdfs:subClassOf rdf:resource="http://example.com#ForAnalysisBehaviorUses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Microphone -->
+
+    <owl:Class rdf:about="http://example.com#Microphone">
+        <rdfs:subClassOf rdf:resource="http://example.com#EmotionDetectionSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#OpenCV -->
+
+    <owl:Class rdf:about="http://example.com#OpenCV">
+        <rdfs:subClassOf rdf:resource="http://example.com#ForAnalysisAudioUses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Quiz -->
+
+    <owl:Class rdf:about="http://example.com#Quiz">
+        <rdfs:subClassOf rdf:resource="http://example.com#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#RandomForest -->
+
+    <owl:Class rdf:about="http://example.com#RandomForest">
+        <rdfs:subClassOf rdf:resource="http://example.com#ForAnalysisBehaviorUses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#RegressionModels -->
+
+    <owl:Class rdf:about="http://example.com#RegressionModels">
+        <rdfs:subClassOf rdf:resource="http://example.com#ForAnalysisVideoUses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#SVM -->
+
+    <owl:Class rdf:about="http://example.com#SVM">
+        <rdfs:subClassOf rdf:resource="http://example.com#ForAnalysisBehaviorUses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Sadness -->
+
+    <owl:Class rdf:about="http://example.com#Sadness">
+        <rdfs:subClassOf rdf:resource="http://example.com#emotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#SoftwareWeb -->
+
+    <owl:Class rdf:about="http://example.com#SoftwareWeb">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Student -->
+
+    <owl:Class rdf:about="http://example.com#Student">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Surprise -->
+
+    <owl:Class rdf:about="http://example.com#Surprise">
+        <rdfs:subClassOf rdf:resource="http://example.com#emotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Teacher -->
+
+    <owl:Class rdf:about="http://example.com#Teacher">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#UserProfile -->
+
+    <owl:Class rdf:about="http://example.com#UserProfile">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#IntrinsicMode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#VADER -->
+
+    <owl:Class rdf:about="http://example.com#VADER">
+        <rdfs:subClassOf rdf:resource="http://example.com#ForAnalysisTextUses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#Videos -->
+
+    <owl:Class rdf:about="http://example.com#Videos">
+        <rdfs:subClassOf rdf:resource="http://example.com#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com#emotion -->
+
+    <owl:Class rdf:about="http://example.com#emotion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#IntrinsicMode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#AbstractIndividual -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#AbstractIndividual">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Individual"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#AbstractIndividualType -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#AbstractIndividualType">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#AntiRigidType -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#AntiRigidType">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#NonRigidType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Aspect -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Aspect">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Endurant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Category -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Category">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#NonSortal"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#RigidType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Collection -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Collection">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#ComparativeRelationshipType -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#ComparativeRelationshipType">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#RelationshipType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#ConcreteIndividual -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#ConcreteIndividual">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Individual"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#ConcreteIndividualType -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#ConcreteIndividualType">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Endurant -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Endurant">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#ConcreteIndividual"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#EndurantType -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#EndurantType">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#ConcreteIndividualType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Event -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Event">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#ConcreteIndividual"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#EventType -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#EventType">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#ConcreteIndividualType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#ExtrinsicAspect -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#ExtrinsicAspect">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Aspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#ExtrinsicMode -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#ExtrinsicMode">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#ExtrinsicAspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#FixedCollection -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#FixedCollection">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Collection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#FunctionalComplex -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#FunctionalComplex">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Individual -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Individual"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#IntrinsicAspect -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#IntrinsicAspect">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Aspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#IntrinsicMode -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#IntrinsicMode">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#IntrinsicAspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Kind -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Kind">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#RigidType"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Sortal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#MaterialRelationshipType -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#MaterialRelationshipType">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#RelationshipType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Mixin -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Mixin">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#NonSortal"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#SemiRigidType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#NonRigidType -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#NonRigidType">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#EndurantType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#NonSortal -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#NonSortal">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#EndurantType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Object -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Object">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Endurant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Participation -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Participation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Phase -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Phase">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#AntiRigidType"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Sortal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#PhaseMixin -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#PhaseMixin">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#AntiRigidType"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#NonSortal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Quality -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Quality">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#IntrinsicAspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#QualityValue -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#QualityValue">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#AbstractIndividual"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#QualityValueAttributionSituation -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#QualityValueAttributionSituation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Situation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Quantity -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Quantity">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#RelationshipType -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#RelationshipType">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Relator -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Relator">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#ExtrinsicAspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#RigidType -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#RigidType">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#EndurantType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Role -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Role">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#AntiRigidType"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Sortal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#RoleMixin -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#RoleMixin">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#AntiRigidType"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#NonSortal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#SemiRigidType -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#SemiRigidType">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#NonRigidType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Situation -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Situation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#ConcreteIndividual"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#SituationType -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#SituationType">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#ConcreteIndividualType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Sortal -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Sortal">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#EndurantType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#SubKind -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#SubKind">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#RigidType"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Sortal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#TemporaryConstitutionSituation -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#TemporaryConstitutionSituation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Situation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#TemporaryInstantiationSituation -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#TemporaryInstantiationSituation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Situation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#TemporaryParthoodSituation -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#TemporaryParthoodSituation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Situation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#TemporaryRelationshipSituation -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#TemporaryRelationshipSituation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Situation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Type -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Type"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#VariableCollection -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#VariableCollection">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Collection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Instant">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#AbstractIndividual"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

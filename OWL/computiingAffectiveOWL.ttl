@@ -1,0 +1,725 @@
+@prefix : <http://example.com#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gufo: <http://purl.org/nemo/gufo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://example.com#> .
+
+<http://example.com> rdf:type owl:Ontology ;
+                      owl:imports gufo: .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://example.com#has
+:has rdf:type owl:ObjectProperty ;
+     rdfs:domain :Student ;
+     rdfs:range :UserProfile .
+
+
+###  http://example.com#hasEmotion
+:hasEmotion rdf:type owl:ObjectProperty ;
+            rdfs:domain :Student ;
+            rdfs:range :emotion .
+
+
+###  http://example.com#uses
+:uses rdf:type owl:ObjectProperty ;
+      rdfs:domain :Teacher ;
+      rdfs:range :DigitalLearningObject ,
+                 :SoftwareWeb .
+
+
+###  http://example.com#usesFor
+:usesFor rdf:type owl:ObjectProperty ;
+         rdfs:domain :DigitalLearningObject ,
+                     :SoftwareWeb ;
+         rdfs:range :ForAnalysisAudioUses ,
+                    :ForAnalysisBehaviorUses ,
+                    :ForAnalysisTextUses ,
+                    :ForAnalysisVideoUses .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://example.com#Activity
+:Activity rdf:type owl:Class ;
+          rdfs:subClassOf gufo:FunctionalComplex .
+
+
+###  http://example.com#AlgorithmTypes
+:AlgorithmTypes rdf:type owl:Class ;
+                rdfs:subClassOf gufo:FunctionalComplex .
+
+
+###  http://example.com#Anger
+:Anger rdf:type owl:Class ;
+       rdfs:subClassOf :emotion .
+
+
+###  http://example.com#Audio
+:Audio rdf:type owl:Class ;
+       rdfs:subClassOf :Activity .
+
+
+###  http://example.com#Audios
+:Audios rdf:type owl:Class ;
+        rdfs:subClassOf :EmotionDetectionSystem .
+
+
+###  http://example.com#BERT
+:BERT rdf:type owl:Class ;
+      rdfs:subClassOf :ForAnalysisTextUses .
+
+
+###  http://example.com#CNN
+:CNN rdf:type owl:Class ;
+     rdfs:subClassOf :ForAnalysisAudioUses .
+
+
+###  http://example.com#Camera
+:Camera rdf:type owl:Class ;
+        rdfs:subClassOf :EmotionDetectionSystem .
+
+
+###  http://example.com#DecisionTree
+:DecisionTree rdf:type owl:Class ;
+              rdfs:subClassOf :ForAnalysisVideoUses .
+
+
+###  http://example.com#DigitalLearningObject
+:DigitalLearningObject rdf:type owl:Class ;
+                       rdfs:subClassOf gufo:FunctionalComplex .
+
+
+###  http://example.com#Disgust
+:Disgust rdf:type owl:Class ;
+         rdfs:subClassOf :emotion .
+
+
+###  http://example.com#Dlib
+:Dlib rdf:type owl:Class ;
+      rdfs:subClassOf :ForAnalysisAudioUses .
+
+
+###  http://example.com#EmotionDetectionSystem
+:EmotionDetectionSystem rdf:type owl:Class ;
+                        rdfs:subClassOf gufo:IntrinsicMode .
+
+
+###  http://example.com#EmotionNegative
+:EmotionNegative rdf:type owl:Class ;
+                 rdfs:subClassOf :UserProfile .
+
+
+###  http://example.com#EmotionNeutral
+:EmotionNeutral rdf:type owl:Class ;
+                rdfs:subClassOf :UserProfile .
+
+
+###  http://example.com#EmotionPositive
+:EmotionPositive rdf:type owl:Class ;
+                 rdfs:subClassOf :UserProfile .
+
+
+###  http://example.com#Fear
+:Fear rdf:type owl:Class ;
+      rdfs:subClassOf :emotion .
+
+
+###  http://example.com#ForAnalysisAudioUses
+:ForAnalysisAudioUses rdf:type owl:Class ;
+                      rdfs:subClassOf gufo:IntrinsicMode .
+
+
+###  http://example.com#ForAnalysisBehaviorUses
+:ForAnalysisBehaviorUses rdf:type owl:Class ;
+                         rdfs:subClassOf gufo:IntrinsicMode .
+
+
+###  http://example.com#ForAnalysisTextUses
+:ForAnalysisTextUses rdf:type owl:Class ;
+                     rdfs:subClassOf gufo:IntrinsicMode .
+
+
+###  http://example.com#ForAnalysisVideoUses
+:ForAnalysisVideoUses rdf:type owl:Class ;
+                      rdfs:subClassOf gufo:IntrinsicMode .
+
+
+###  http://example.com#FormText
+:FormText rdf:type owl:Class ;
+          rdfs:subClassOf :Activity .
+
+
+###  http://example.com#ForumDiscussionDebate
+:ForumDiscussionDebate rdf:type owl:Class ;
+                       rdfs:subClassOf :Activity .
+
+
+###  http://example.com#GPT
+:GPT rdf:type owl:Class ;
+     rdfs:subClassOf :ForAnalysisTextUses .
+
+
+###  http://example.com#Gemini
+:Gemini rdf:type owl:Class ;
+        rdfs:subClassOf :ForAnalysisTextUses .
+
+
+###  http://example.com#Happiness
+:Happiness rdf:type owl:Class ;
+           rdfs:subClassOf :emotion .
+
+
+###  http://example.com#KMeans
+:KMeans rdf:type owl:Class ;
+        rdfs:subClassOf :ForAnalysisVideoUses .
+
+
+###  http://example.com#LearningJounal
+:LearningJounal rdf:type owl:Class ;
+                rdfs:subClassOf :Activity .
+
+
+###  http://example.com#MFCC
+:MFCC rdf:type owl:Class ;
+      rdfs:subClassOf :ForAnalysisBehaviorUses .
+
+
+###  http://example.com#Microphone
+:Microphone rdf:type owl:Class ;
+            rdfs:subClassOf :EmotionDetectionSystem .
+
+
+###  http://example.com#OpenCV
+:OpenCV rdf:type owl:Class ;
+        rdfs:subClassOf :ForAnalysisAudioUses .
+
+
+###  http://example.com#Quiz
+:Quiz rdf:type owl:Class ;
+      rdfs:subClassOf :Activity .
+
+
+###  http://example.com#RandomForest
+:RandomForest rdf:type owl:Class ;
+              rdfs:subClassOf :ForAnalysisBehaviorUses .
+
+
+###  http://example.com#RegressionModels
+:RegressionModels rdf:type owl:Class ;
+                  rdfs:subClassOf :ForAnalysisVideoUses .
+
+
+###  http://example.com#SVM
+:SVM rdf:type owl:Class ;
+     rdfs:subClassOf :ForAnalysisBehaviorUses .
+
+
+###  http://example.com#Sadness
+:Sadness rdf:type owl:Class ;
+         rdfs:subClassOf :emotion .
+
+
+###  http://example.com#SoftwareWeb
+:SoftwareWeb rdf:type owl:Class ;
+             rdfs:subClassOf gufo:FunctionalComplex .
+
+
+###  http://example.com#Student
+:Student rdf:type owl:Class ;
+         rdfs:subClassOf gufo:FunctionalComplex .
+
+
+###  http://example.com#Surprise
+:Surprise rdf:type owl:Class ;
+          rdfs:subClassOf :emotion .
+
+
+###  http://example.com#Teacher
+:Teacher rdf:type owl:Class ;
+         rdfs:subClassOf gufo:FunctionalComplex .
+
+
+###  http://example.com#UserProfile
+:UserProfile rdf:type owl:Class ;
+             rdfs:subClassOf gufo:IntrinsicMode .
+
+
+###  http://example.com#VADER
+:VADER rdf:type owl:Class ;
+       rdfs:subClassOf :ForAnalysisTextUses .
+
+
+###  http://example.com#Videos
+:Videos rdf:type owl:Class ;
+        rdfs:subClassOf :Activity .
+
+
+###  http://example.com#emotion
+:emotion rdf:type owl:Class ;
+         rdfs:subClassOf gufo:IntrinsicMode .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://example.com#Activity
+:Activity rdf:type owl:NamedIndividual ,
+                   gufo:Kind .
+
+
+###  http://example.com#AlgorithmTypes
+:AlgorithmTypes rdf:type owl:NamedIndividual ,
+                         gufo:Kind .
+
+
+###  http://example.com#Anger
+:Anger rdf:type owl:NamedIndividual ,
+                gufo:SubKind .
+
+
+###  http://example.com#Audio
+:Audio rdf:type owl:NamedIndividual ,
+                gufo:SubKind .
+
+
+###  http://example.com#Audios
+:Audios rdf:type owl:NamedIndividual ,
+                 gufo:SubKind .
+
+
+###  http://example.com#BERT
+:BERT rdf:type owl:NamedIndividual ,
+               gufo:SubKind .
+
+
+###  http://example.com#CNN
+:CNN rdf:type owl:NamedIndividual ,
+              gufo:SubKind .
+
+
+###  http://example.com#Camera
+:Camera rdf:type owl:NamedIndividual ,
+                 gufo:SubKind .
+
+
+###  http://example.com#DecisionTree
+:DecisionTree rdf:type owl:NamedIndividual ,
+                       gufo:SubKind .
+
+
+###  http://example.com#DigitalLearningObject
+:DigitalLearningObject rdf:type owl:NamedIndividual ,
+                                gufo:Kind .
+
+
+###  http://example.com#Disgust
+:Disgust rdf:type owl:NamedIndividual ,
+                  gufo:SubKind .
+
+
+###  http://example.com#Dlib
+:Dlib rdf:type owl:NamedIndividual ,
+               gufo:SubKind .
+
+
+###  http://example.com#EmotionDetectionSystem
+:EmotionDetectionSystem rdf:type owl:NamedIndividual ,
+                                 gufo:Kind .
+
+
+###  http://example.com#EmotionNegative
+:EmotionNegative rdf:type owl:NamedIndividual ,
+                          gufo:SubKind .
+
+
+###  http://example.com#EmotionNeutral
+:EmotionNeutral rdf:type owl:NamedIndividual ,
+                         gufo:SubKind .
+
+
+###  http://example.com#EmotionPositive
+:EmotionPositive rdf:type owl:NamedIndividual ,
+                          gufo:SubKind .
+
+
+###  http://example.com#Fear
+:Fear rdf:type owl:NamedIndividual ,
+               gufo:SubKind .
+
+
+###  http://example.com#ForAnalysisAudioUses
+:ForAnalysisAudioUses rdf:type owl:NamedIndividual ,
+                               gufo:Kind .
+
+
+###  http://example.com#ForAnalysisBehaviorUses
+:ForAnalysisBehaviorUses rdf:type owl:NamedIndividual ,
+                                  gufo:Kind .
+
+
+###  http://example.com#ForAnalysisTextUses
+:ForAnalysisTextUses rdf:type owl:NamedIndividual ,
+                              gufo:Kind .
+
+
+###  http://example.com#ForAnalysisVideoUses
+:ForAnalysisVideoUses rdf:type owl:NamedIndividual ,
+                               gufo:Kind .
+
+
+###  http://example.com#FormText
+:FormText rdf:type owl:NamedIndividual ,
+                   gufo:SubKind .
+
+
+###  http://example.com#ForumDiscussionDebate
+:ForumDiscussionDebate rdf:type owl:NamedIndividual ,
+                                gufo:SubKind .
+
+
+###  http://example.com#GPT
+:GPT rdf:type owl:NamedIndividual ,
+              gufo:SubKind .
+
+
+###  http://example.com#Gemini
+:Gemini rdf:type owl:NamedIndividual ,
+                 gufo:SubKind .
+
+
+###  http://example.com#Happiness
+:Happiness rdf:type owl:NamedIndividual ,
+                    gufo:SubKind .
+
+
+###  http://example.com#KMeans
+:KMeans rdf:type owl:NamedIndividual ,
+                 gufo:SubKind .
+
+
+###  http://example.com#LearningJounal
+:LearningJounal rdf:type owl:NamedIndividual ,
+                         gufo:SubKind .
+
+
+###  http://example.com#MFCC
+:MFCC rdf:type owl:NamedIndividual ,
+               gufo:SubKind .
+
+
+###  http://example.com#Microphone
+:Microphone rdf:type owl:NamedIndividual ,
+                     gufo:SubKind .
+
+
+###  http://example.com#OpenCV
+:OpenCV rdf:type owl:NamedIndividual ,
+                 gufo:SubKind .
+
+
+###  http://example.com#Quiz
+:Quiz rdf:type owl:NamedIndividual ,
+               gufo:SubKind .
+
+
+###  http://example.com#RandomForest
+:RandomForest rdf:type owl:NamedIndividual ,
+                       gufo:SubKind .
+
+
+###  http://example.com#RegressionModels
+:RegressionModels rdf:type owl:NamedIndividual ,
+                           gufo:SubKind .
+
+
+###  http://example.com#SVM
+:SVM rdf:type owl:NamedIndividual ,
+              gufo:SubKind .
+
+
+###  http://example.com#Sadness
+:Sadness rdf:type owl:NamedIndividual ,
+                  gufo:SubKind .
+
+
+###  http://example.com#SoftwareWeb
+:SoftwareWeb rdf:type owl:NamedIndividual ,
+                      gufo:Kind .
+
+
+###  http://example.com#Student
+:Student rdf:type owl:NamedIndividual ,
+                  gufo:Kind .
+
+
+###  http://example.com#Surprise
+:Surprise rdf:type owl:NamedIndividual ,
+                   gufo:SubKind .
+
+
+###  http://example.com#Teacher
+:Teacher rdf:type owl:NamedIndividual ,
+                  gufo:Kind .
+
+
+###  http://example.com#UserProfile
+:UserProfile rdf:type owl:NamedIndividual ,
+                      gufo:Kind .
+
+
+###  http://example.com#VADER
+:VADER rdf:type owl:NamedIndividual ,
+                gufo:SubKind .
+
+
+###  http://example.com#Videos
+:Videos rdf:type owl:NamedIndividual ,
+                 gufo:SubKind .
+
+
+###  http://example.com#emotion
+:emotion rdf:type owl:NamedIndividual ,
+                  gufo:Kind .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:Activity rdfs:label "Activity"@en .
+
+
+:AlgorithmTypes rdfs:comment """Boitel, E., Mohasseb, A., & Haig, E. (2024). \"A Comparative Analysis of GPT-3 and BERT Models for Text-based Emotion Recognition: Performance, Efficiency, and Robustness.\" In Advances in Computational Intelligence Systems (pp. 567�579). Springer.
+Jia, W., et al. (2023). \"Speech Emotion Recognition: A Review of Algorithms and Datasets.\" Journal of Signal Processing Systems, 95(1), 25-45.   
+Ghosh, S., & Singh, S. (2023). \"Behavioral Emotion Recognition Algorithms: Approaches and Challenges.\" IEEE Transactions on Affective Computing, 14(2), 350-369.
+Zhao, J., et al. (2023). \"Multimodal Emotion Recognition from Video Using CNN and RNN Networks.\" Computer Vision and Image Understanding, 231, 103598.  
+ """@en ;
+                rdfs:label "AlgorithmTypes"@en .
+
+
+:Anger rdfs:label "Anger"@en .
+
+
+:Audio rdfs:label "Audio"@en .
+
+
+:Audios rdfs:label "Audios"@en .
+
+
+:BERT rdfs:label "BERT"@en .
+
+
+:CNN rdfs:label "CNN "@en .
+
+
+:Camera rdfs:label "Camera "@en .
+
+
+:DecisionTree rdfs:label "DecisionTree"@en .
+
+
+:DigitalLearningObject rdfs:label "DigitalLearningObject"@en .
+
+
+:Disgust rdfs:label "Disgust"@en .
+
+
+:Dlib rdfs:label "Dlib"@en .
+
+
+:EmotionDetectionSystem rdfs:label "EmotionDetectionSystem"@en .
+
+
+:EmotionNegative rdfs:comment """
+Pang e Lee (2002, 2004) 
+Contribui��o: Bing Pang e Lillian Lee foram pioneiros no campo da an�lise de sentimentos, especialmente com suas publica��es sobre opinion mining (minera��o de opini�es). Eles adaptaram as ideias psicol�gicas de emo��es positivas e negativas para categorizar e classificar textos, como avalia��es e coment�rios, como express�es de sentimentos positivos ou negativos. 
+Um dos primeiros estudos que abordam diretamente essa categoriza��o de sentimentos � o trabalho de Pang e Lee (2008): 
+ """@en ;
+                 rdfs:label "EmotionNegative "@en .
+
+
+:EmotionNeutral rdfs:comment """
+Pang e Lee (2002, 2004) 
+Contribui��o: Bing Pang e Lillian Lee foram pioneiros no campo da an�lise de sentimentos, especialmente com suas publica��es sobre opinion mining (minera��o de opini�es). Eles adaptaram as ideias psicol�gicas de emo��es positivas e negativas para categorizar e classificar textos, como avalia��es e coment�rios, como express�es de sentimentos positivos ou negativos. 
+Um dos primeiros estudos que abordam diretamente essa categoriza��o de sentimentos � o trabalho de Pang e Lee (2008): 
+ """@en ;
+                rdfs:label "EmotionNeutral"@en .
+
+
+:EmotionPositive rdfs:comment """
+Pang e Lee (2002, 2004) 
+Contribui��o: Bing Pang e Lillian Lee foram pioneiros no campo da an�lise de sentimentos, especialmente com suas publica��es sobre opinion mining (minera��o de opini�es). Eles adaptaram as ideias psicol�gicas de emo��es positivas e negativas para categorizar e classificar textos, como avalia��es e coment�rios, como express�es de sentimentos positivos ou negativos. 
+Um dos primeiros estudos que abordam diretamente essa categoriza��o de sentimentos � o trabalho de Pang e Lee (2008): 
+ """@en ;
+                 rdfs:label "EmotionPositive"@en .
+
+
+:Fear rdfs:label "Fear"@en .
+
+
+:ForAnalysisAudioUses rdfs:label "ForAnalysisAudioUses"@en .
+
+
+:ForAnalysisBehaviorUses rdfs:label "ForAnalysisBehaviorUses"@en .
+
+
+:ForAnalysisTextUses rdfs:label "ForAnalysisTextUses"@en .
+
+
+:ForAnalysisVideoUses rdfs:label "ForAnalysisVideoUses"@en .
+
+
+:FormText rdfs:label "FormText"@en .
+
+
+:ForumDiscussionDebate rdfs:label "ForumDiscussionDebate"@en .
+
+
+:GPT rdfs:label "GPT"@en .
+
+
+:Gemini rdfs:label "Gemini"@en .
+
+
+:Happiness rdfs:label "Happiness"@en .
+
+
+:KMeans rdfs:label " KMeans"@en .
+
+
+:LearningJounal rdfs:label "LearningJounal"@en .
+
+
+:MFCC rdfs:label " MFCC"@en .
+
+
+:Microphone rdfs:label "Microphone"@en .
+
+
+:OpenCV rdfs:label " OpenCV"@en .
+
+
+:Quiz rdfs:label "Quiz"@en .
+
+
+:RandomForest rdfs:label " RandomForest"@en .
+
+
+:RegressionModels rdfs:label "RegressionModels"@en .
+
+
+:SVM rdfs:label " SVM"@en .
+
+
+:Sadness rdfs:label "Sadness"@en .
+
+
+:SoftwareWeb rdfs:label "SoftwareWeb"@en .
+
+
+:Student rdfs:label "Student"@en .
+
+
+:Surprise rdfs:label "Surprise"@en .
+
+
+:Teacher rdfs:label "Teacher"@en .
+
+
+:UserProfile rdfs:label "UserProfile"@en .
+
+
+:VADER rdfs:label "VADER"@en .
+
+
+:Videos rdfs:label "Videos"@en .
+
+
+:emotion rdfs:label "emotion"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Anger
+                :Disgust
+                :Fear
+                :Happiness
+                :Sadness
+                :Surprise
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Audio
+                :FormText
+                :ForumDiscussionDebate
+                :LearningJounal
+                :Quiz
+                :Videos
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Audios
+                :Camera
+                :Microphone
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BERT
+                :GPT
+                :Gemini
+                :VADER
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CNN
+                :Dlib
+                :OpenCV
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DecisionTree
+                :KMeans
+                :RegressionModels
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :EmotionNegative
+                :EmotionNeutral
+                :EmotionPositive
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :MFCC
+                :RandomForest
+                :SVM
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
