@@ -1,87 +1,60 @@
-# Documento de Especificação de Requisitos da Ontologia (ORSD)
+# Documento de Especificação de Requisitos da Ontologia (ORS-D)
 
 ## 1. Introdução
 
-Este documento apresenta a ontologia "Objetos de Aprendizagem Digitais Combinados com Computação Afetiva," desenvolvida com o objetivo de otimizar o processo de ensino-aprendizagem em ambientes digitais. A ontologia estrutura conceitos, relacionamentos e propriedades que descrevem como objetos de aprendizagem digitais e elementos de computação afetiva interagem para promover um ambiente educacional mais adaptativo e emocionalmente envolvente.
+### 1.1 Objetivo
+Este documento descreve os requisitos necessários para o desenvolvimento de uma ontologia voltada para a computação afetiva no ensino, com o objetivo de modelar interações entre estudantes, professores, objetos digitais de aprendizagem e as emoções dos alunos. A ontologia visa adaptar atividades de aprendizagem com base no estado emocional dos alunos, monitorar suas emoções durante o processo educacional e fornecer feedback emocional.
 
-O conceito de computação afetiva, introduzido por Picard (1997), abriu caminho para o reconhecimento e a resposta às emoções em sistemas computacionais, demonstrando o potencial dessas tecnologias para melhorar a interação humano-computador. No contexto educacional, trabalhos como o de Woolf e Arroyo (2012) exploram o uso de instruções computacionais que personalizam o ensino com base nas necessidades e emoções individuais dos alunos. Em seu estudo, eles discutem como os sistemas de ensino digital podem adaptar o conteúdo e as respostas do sistema para refletir o estado emocional e as necessidades de aprendizado de cada aluno, promovendo uma experiência educacional mais positiva e personalizada.
+### 1.2 Escopo
+O escopo da ontologia abrange:
+- A modelagem de conceitos e relações no contexto de educação e computação afetiva.
+- A adaptação das atividades de aprendizado de acordo com as emoções capturadas dos alunos.
+- O fornecimento de feedback emocional aos alunos com base nas interações com o sistema.
 
-Essas abordagens são essenciais para ambientes de ensino digitais modernos, onde a compreensão das emoções e sua integração ao processo de aprendizagem podem incentivar o engajamento e a personalização. A ontologia proposta visa modelar esses relacionamentos complexos entre professores, alunos, objetos de aprendizagem digitais e emoções, proporcionando uma base conceitual para a criação de sistemas que ajustem o conteúdo conforme o estado emocional dos alunos e aumentem a efetividade do ensino.
+## 2. Requisitos Funcionais
 
-## 2. Objetivos da Ontologia
+Os requisitos funcionais da ontologia são formulados como questões de competência. Essas questões devem ser respondidas pelo processo de modelagem da ontologia. Abaixo estão as principais questões de competência que a ontologia precisa responder:
 
-A ontologia foi criada com os seguintes objetivos principais:
+### 2.1 Questões de Competência
 
-- Representar as relações entre alunos, professores, objetos de aprendizagem digitais, computação afetiva e o ambiente de aprendizagem.
-- Modelar a influência das emoções no engajamento e nos resultados de aprendizado.
-- Descrever como os objetos de aprendizagem digitais podem adaptar o conteúdo com base nas emoções dos alunos, promovendo uma interação mais personalizada e eficaz.
+#### 2.1.1 Qual é o papel de um Professor no processo de ensino usando Objetos Digitais de Aprendizado?
+A ontologia deve modelar o conceito de **Teacher (Professor)** e como ele utiliza o **DigitalLearningObject (Objeto Digital de Aprendizado)** para ensinar e interagir com os alunos. A questão é respondida por uma associação entre **Teacher** e **DigitalLearningObject**.
 
-## 3. Classes e Propriedades
+#### 2.1.2 Como a emoção de um aluno afeta sua interação com as atividades de aprendizado?
+A ontologia precisa descrever como as emoções dos estudantes (**Emotion**) influenciam a adaptação das atividades educacionais (**Activity**) através do **DigitalLearningObject**. A questão é respondida pela modelagem da associação **adaptActivitiesBasedOnEmotion**, que liga **Emotion** a **Activity**.
 
-Esta seção detalha as principais classes e propriedades que constituem a ontologia.
+#### 2.1.3 Como as emoções dos alunos são capturadas e associadas ao aprendizado?
+A ontologia deve incluir mecanismos para modelar a captura das emoções dos alunos, representadas pela associação **capturesEmotionFrom**, que relaciona **DigitalLearningObject** com **Student** e **Emotion**.
 
-### 3.1. Classes
+#### 2.1.4 Qual é a relação entre os estudantes e o feedback emocional durante o processo de aprendizado?
+A ontologia deve modelar o relacionamento entre o **EmotionDetectionSystem** e o **SoftwareWeb**, sendo este o processo de fornecimento de feedback emocional através da associação **providesEmotionFeedbackTo**.
 
-- **Activity**: Representa atividades de ensino ou aprendizado em que os alunos podem estar envolvidos.
-- **AffectiveComputing**: Computação afetiva como tecnologia de reconhecimento e resposta emocional, adaptando atividades baseadas nas emoções.
-- **Anger, Frustration, Happiness, Joy**: Emoções específicas, com Anger e Frustration sendo subclasses de NegativeEmotion, e Happiness e Joy subclasses de PositiveEmotion.
-- **DigitalLearningObject**: Objetos de aprendizagem digitais que analisam e adaptam atividades com base nas emoções dos alunos.
-- **Emotion**: Estado emocional dos alunos, com subclasses específicas:
-  - **PositiveEmotion**: Representa emoções positivas, indicando engajamento.
-  - **NegativeEmotion**: Representa emoções negativas, indicando possível desmotivação.
-- **Software**: Software relacionado aos objetos de aprendizagem digitais e às atividades.
-- **Student**: Representa o aluno, com emoções associadas.
-- **Teacher**: Professor que utiliza a computação afetiva e objetos de aprendizagem digitais para criar atividades e acompanhar o progresso.
+### 2.2 Respostas Esperadas no Processo de Modelagem
+A modelagem deve responder a essas questões, utilizando a definição de entidades, relacionamentos, papéis e estereótipos como elementos centrais para representar:
+- A adaptação dinâmica do conteúdo educacional com base nas emoções dos alunos.
+- A interação entre estudantes e professores através de objetos digitais de aprendizado.
+- O monitoramento contínuo das emoções dos estudantes durante o processo de ensino e a retroalimentação emocional gerada.
 
-### 3.2. Propriedades de Objetos
+## 3. Requisitos Não Funcionais
 
-- **adaptsActivitiesBasedOnEmotion**: Software adapta as atividades com base nas emoções.
-- **adaptsBasedOnEmotion**: DigitalLearningObject adapta o conteúdo de acordo com a emoção detectada.
-- **analyzes**: DigitalLearningObject analisa as emoções dos alunos.
-- **capturesEmotion**: Software captura as emoções dos alunos.
-- **creates**: Teacher cria atividades para os alunos.
-- **enhancesEngagement**: AffectiveComputing aumenta o engajamento do aluno.
-- **hasEmotion**: Associa emoções específicas ao estudante.
-- **isEmotionOf**: Inverso de hasEmotion, associando emoções ao aluno.
-- **suggestActivitiesBasedOnEmotion**: Software sugere atividades baseadas nas emoções do aluno.
-- **supports**: AffectiveComputing oferece suporte ao professor.
-- **usesForTeaching**: Professor utiliza objetos de aprendizagem e software para ensinar.
+Os requisitos não funcionais são essenciais para a aplicação, utilização e disseminação da ontologia, e abrangem aspectos técnicos e organizacionais.
 
-Essas propriedades indicam como cada elemento da ontologia interage para adaptar o processo de aprendizado conforme o estado emocional do aluno.
+### 3.1 Idiomas de Publicação da Ontologia
+A ontologia será publicada usando o **OWL (Web Ontology Language)**, um formato padrão para representação de ontologias na web. A ontologia pode ser complementada com **OWLDoc** para fornecer documentação acessível e legível para humanos sobre a estrutura e o significado da ontologia.
 
-### 3.3. Propriedades de Dados
+### 3.2 Disponibilidade de Documentação Adicional
+A documentação adicional estará disponível em plataformas como **GitHub**, permitindo colaboração, controle de versão e contribuições da comunidade. Artigos acadêmicos e papers explicando os conceitos e modelos da ontologia serão disponibilizados para pesquisadores e profissionais interessados.
 
-- **hasTimestamp**: Define um carimbo de data/hora (em formato xsd:dateTime) associado a uma emoção específica, capturando quando a emoção foi detectada.
+### 3.3 Facilidade de Uso e Adoção
+A ontologia será estruturada de forma a ser intuitiva e de fácil compreensão para desenvolvedores de sistemas educacionais, pesquisadores em computação afetiva e educadores. A ontologia será projetada para fácil integração com outras ontologias educacionais existentes e ferramentas de aprendizado. A plataforma **GitHub** permitirá que a comunidade contribua para a evolução da ontologia, aumentando sua aceitação e aplicação prática.
 
-## 4. Escopo da Ontologia
+### 3.4 Usabilidade e Aceitação
+A ontologia será acompanhada de exemplos práticos e tutoriais sobre como utilizá-la em diferentes cenários educacionais. A ontologia deve ser acessível a usuários com diferentes níveis de experiência em ontologias e computação afetiva, garantindo ampla aceitação e aplicação em contextos diversos de ensino.
 
-A ontologia abrange os seguintes aspectos:
+### 3.5 Licenciamento e Acesso
+A ontologia será licenciada sob uma licença **open-source**, permitindo que qualquer interessado a utilize, modifique e distribua, respeitando os termos de uso. Documentação e código-fonte serão publicamente acessíveis, garantindo transparência e confiabilidade.
 
-- As interações entre professores, alunos e objetos de aprendizagem digitais com suporte de computação afetiva.
-- A representação de estados emocionais e seu impacto no aprendizado.
-- A adaptação e sugestão de atividades e conteúdos baseados no estado emocional dos alunos, usando propriedades como **adaptsActivitiesBasedOnEmotion** e **suggestActivitiesBasedOnEmotion**.
+## 4. Conclusão
+Este Documento de Especificação de Requisitos da Ontologia (ORS-D) descreve os requisitos funcionais e não funcionais necessários para a criação de uma ontologia voltada para a computação afetiva no contexto educacional. A ontologia permitirá a adaptação das atividades de aprendizado com base nas emoções dos alunos, a captura de emoções durante o processo educacional e o fornecimento de feedback emocional.
 
-## 5. Requisitos Funcionais
-
-- **RF01**: Relacionar Emoções com Estudantes - O sistema deve associar emoções específicas ao estudante por meio da propriedade **hasEmotion**.
-- **RF02**: Captura de Emoções - O sistema deve permitir que o software capture emoções dos alunos com **capturesEmotion**.
-- **RF03**: Adaptação de Conteúdo Baseada em Emoção - Deve haver suporte para adaptação de atividades baseadas nas emoções dos alunos com **adaptsActivitiesBasedOnEmotion**.
-- **RF04**: Sugestão de Atividades Baseada em Emoção - O software sugere atividades apropriadas com **suggestActivitiesBasedOnEmotion**.
-- **RF05**: Análise de Engajamento - O sistema deve analisar como a computação afetiva aumenta o engajamento dos alunos com **enhancesEngagement**.
-- **RF06**: Suporte ao Professor - Computação afetiva deve fornecer suporte ao professor na criação de atividades e no monitoramento com **supports**.
-
-## 6. Requisitos Não Funcionais
-
-- **RNF01**: A ontologia deve ser desenvolvida usando OntoUML para garantir um modelo visual e conceitualmente robusto.
-- **RNF02**: A ontologia deve estar em conformidade com o padrão OWL para facilitar sua implementação em sistemas de software e sua interoperabilidade com outras ontologias.
-- **RNF03**: A ontologia deve ser implementada em uma plataforma de controle de versão, como o GitHub, para manter o versionamento e a documentação do projeto.
-- **RNF04**: A ontologia deve permitir fácil expansão para novos conceitos e relações no domínio da educação afetiva.
-
-## 7. Conclusão
-
-A ontologia "Objetos de Aprendizagem Digitais Combinados com Computação Afetiva" é projetada para integrar tecnologias educacionais com o reconhecimento de emoções para criar um ambiente de aprendizado mais adaptativo e envolvente. Esta abordagem não só melhora o engajamento e a personalização da aprendizagem, mas também apoia os educadores na otimização de suas estratégias pedagógicas. A implementação desta ontologia em sistemas de e-learning pode transformar a experiência educacional, tornando-a mais receptiva às necessidades emocionais e cognitivas dos alunos, o que é fundamental para o sucesso educacional em ambientes digitais modernos.
-
-## Referências
-
-- PICARD, Rosalind W. Affective Computing. Cambridge, MA: MIT Press, 1997.
-- WOOLF, B. P.; ARROYO, I. A mentor for every student: One challenge for instructional software. IEEE Intelligent Systems, v. 27, n. 4, p. 62-67, 2012.
+A implementação dessa ontologia ajudará a construir sistemas educacionais mais dinâmicos e sensíveis ao estado emocional dos estudantes, promovendo um aprendizado mais personalizado e eficaz.
