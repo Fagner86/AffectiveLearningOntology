@@ -40,19 +40,14 @@ A modelagem deve responder a essas questões, utilizando a definição de entida
 Os requisitos não funcionais são essenciais para a aplicação, utilização e disseminação da ontologia, e abrangem aspectos técnicos e organizacionais.
 
 ### 3.1 Idiomas de Publicação da Ontologia
-A ontologia será publicada usando o **OWL (Web Ontology Language)**, um formato padrão para representação de ontologias na web. A ontologia pode ser complementada com **OWLDoc** para fornecer documentação acessível e legível para humanos sobre a estrutura e o significado da ontologia.
+A ontologia será publicada usando o **OWL (Web Ontology Language)**, um formato padrão para representação de ontologias na web. A ontologia pode ser complementada com **OWLDoc** para fornecer documentação acessível.
 
 ### 3.2 Disponibilidade de Documentação Adicional
-A documentação adicional estará disponível em plataformas como **GitHub**, permitindo colaboração, controle de versão e contribuições da comunidade. Artigos acadêmicos e papers explicando os conceitos e modelos da ontologia serão disponibilizados para pesquisadores e profissionais interessados.
+A documentação adicional estará disponível em plataformas como **GitHub**, permitindo colaboração, controle de versão e contribuições da comunidade.
 
 ### 3.3 Facilidade de Uso e Adoção
 A ontologia será estruturada de forma a ser intuitiva e de fácil compreensão para desenvolvedores de sistemas educacionais, pesquisadores em computação afetiva e educadores. A ontologia será projetada para fácil integração com outras ontologias educacionais existentes e ferramentas de aprendizado. A plataforma **GitHub** permitirá que a comunidade contribua para a evolução da ontologia, aumentando sua aceitação e aplicação prática.
 
-### 3.4 Usabilidade e Aceitação
-A ontologia será acompanhada de exemplos práticos e tutoriais sobre como utilizá-la em diferentes cenários educacionais. A ontologia deve ser acessível a usuários com diferentes níveis de experiência em ontologias e computação afetiva, garantindo ampla aceitação e aplicação em contextos diversos de ensino.
-
-### 3.5 Licenciamento e Acesso
-A ontologia será licenciada sob uma licença **open-source**, permitindo que qualquer interessado a utilize, modifique e distribua, respeitando os termos de uso. Documentação e código-fonte serão publicamente acessíveis, garantindo transparência e confiabilidade.
 
 ## 4. Conclusão
 Este Documento de Especificação de Requisitos da Ontologia (ORS-D) descreve os requisitos funcionais e não funcionais necessários para a criação de uma ontologia voltada para a computação afetiva no contexto educacional. A ontologia permitirá a adaptação das atividades de aprendizado com base nas emoções dos alunos, a captura de emoções durante o processo educacional e o fornecimento de feedback emocional.
